@@ -56,25 +56,25 @@ const Counter: React.FC = () => {
   const arr: CounterItem[] = [
     {
       id: 1,
-      icon: <GiSkills size={35} />,
+      icon: <GiSkills size={35} color="white" />,
       count: 1, // Years of Experience
       heading: "Years of Experience",
     },
     {
       id: 2,
-      icon: <FaLaptopCode size={35} />,
+      icon: <FaLaptopCode size={35}  color="white" />,
       count: 10, // Technologies
       heading: "Technologies",
     },
     {
       id: 3,
-      icon: <AiOutlineFundProjectionScreen size={35} />,
+      icon: <AiOutlineFundProjectionScreen size={35}  color="white"/>,
       count: 15, // Completed Projects
       heading: "Completed Projects",
     },
     {
       id: 4,
-      icon: <PiCertificate size={35} />,
+      icon: <PiCertificate size={35}  color="white"/>,
       count: 5, // Certifications Completed
       heading: "Certifications",
     },

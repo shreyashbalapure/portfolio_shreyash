@@ -12,7 +12,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setMounted(true);
-    setTheme(resolvedTheme === "dark" ? "light" : "dark")
+    setTheme(resolvedTheme === "dark" ? "dark" : "dark")
   }, []);
 
   // Don't render anything until mounted to prevent hydration mismatches
