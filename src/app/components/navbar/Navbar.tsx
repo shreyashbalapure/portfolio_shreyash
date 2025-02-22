@@ -1,8 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { BsMoonStars } from "react-icons/bs";
-import { LuSunMoon } from "react-icons/lu";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
