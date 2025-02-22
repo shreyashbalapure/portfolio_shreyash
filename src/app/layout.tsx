@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "./components/footer/Footer";
 import { Montserrat } from "next/font/google";
+import Navbar from "./components/navbar/Navbar";
 
 export const metadata: Metadata = {
   title: "Shreyash Balapure - Portfolio",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         {" "}
         <ThemeProvider attribute="class">
+          <Navbar/>
           {children}
           <Footer />
         </ThemeProvider>

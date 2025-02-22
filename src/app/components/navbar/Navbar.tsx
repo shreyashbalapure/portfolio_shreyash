@@ -37,7 +37,7 @@ const Navbar = () => {
           className="flex items-center cursor-pointer"
         >
           <span className="self-center text-xl font-semibold whitespace-nowrap text-[#14b8a6] underline">
-            SHREYASHBALAPURE
+            Shreyash Balapure
           </span>
         </ScrollLink>
       </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
           "about",
           "experience",
           "technologies",
-          "projects",
+          // "projects",
           "contact",
         ].map((item) => (
           <ScrollLink
@@ -63,7 +63,7 @@ const Navbar = () => {
             {item.toUpperCase()}
           </ScrollLink>
         ))}
-        <button
+        {/* <button
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
           aria-label="Toggle dark mode"
@@ -73,7 +73,7 @@ const Navbar = () => {
           ) : (
             <BsMoonStars size={20} />
           )}
-        </button>
+        </button> */}
       </div>
 
       {/* Mobile Menu Button */}
@@ -108,7 +108,7 @@ const Navbar = () => {
                 "about",
                 "experience",
                 "techstack",
-                "projects",
+                // "projects",
                 "contact",
               ].map((item) => (
                 <ScrollLink
