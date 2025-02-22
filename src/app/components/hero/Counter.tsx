@@ -125,7 +125,7 @@ const Counter: React.FC = () => {
                   ease: "easeInOut",
                 }}
                 key={item.id}
-                className="relative flex flex-col gap-4 justify-center items-center py-4 rounded-xl shadow-black overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center transition-colors duration-300 hover:text-[#14b8a6]"
+                className="relative flex flex-col gap-4 justify-center items-center py-4 rounded-xl overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center transition-colors duration-300 hover:text-[#14b8a6]"
               >
                 {item.icon}
                 <div className="relative z-10 flex flex-col justify-center items-center">
