@@ -24,7 +24,7 @@ export default function About() {
               user experiences and robust backend architectures.
             </p>
             <p>
-              Holding both a Bachelor’s degree in Computer
+              Holding a Bachelor’s degree in Computer
               Applications (BCA), I have honed my expertise in React.js,
               Node.js, and competitive Java coding. My problem-solving skills,
               backed by algorithmic thinking, enable me to develop efficient,
