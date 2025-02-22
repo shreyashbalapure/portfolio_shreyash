@@ -108,7 +108,7 @@ const Counter: React.FC = () => {
   return (
     <section
       id="about"
-      className="w-full md:px-16 dark:bg-[#0A0A0A] px-4 md:pb-10 flex justify-center items-center"
+      className="w-full md:px-16 bg-[#0A0A0A] px-4 md:pb-10 flex justify-center items-center"
       ref={sectionRef}
     >
       <div className="w-full grid lg:grid-cols-3 place-content-center md:grid-cols-3 grid-cols-1 gap-6 justify-center items-center">
@@ -125,11 +125,11 @@ const Counter: React.FC = () => {
                   ease: "easeInOut",
                 }}
                 key={item.id}
-                className="relative flex flex-col gap-4 justify-center items-center py-4 rounded-xl dark:shadow-black overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center transition-colors duration-300 hover:text-[#14b8a6]"
+                className="relative flex flex-col gap-4 justify-center items-center py-4 rounded-xl shadow-black overflow-hidden group cursor-pointer md:w-52 lg:w-60 w-full h-48 align-content-center transition-colors duration-300 hover:text-[#14b8a6]"
               >
                 {item.icon}
                 <div className="relative z-10 flex flex-col justify-center items-center">
-                  <h5 className="text-3xl font-extrabold text-black dark:text-white group-hover:text-[#14b8a6]">
+                  <h5 className="text-3xl font-extrabold  text-white group-hover:text-[#14b8a6]">
                     {isVisible ? (
                       <CountUp
                         end={item.count}
@@ -141,7 +141,7 @@ const Counter: React.FC = () => {
                     )}
                     {item.id === 5 ? "" : "+"}
                   </h5>
-                  <p className="text-xl text-black dark:text-white group-hover:text-[#14b8a6] text-center">
+                  <p className="text-xl text-white group-hover:text-[#14b8a6] text-center">
                     {item.heading}
                   </p>
                 </div>
