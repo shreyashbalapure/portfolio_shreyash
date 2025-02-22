@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { FaGithub, FaCode, FaExternalLinkAlt } from "react-icons/fa";
-
+import Image, {} from "next/image"
 // Define the type for projects
 type Project = {
   title: string;
@@ -85,7 +85,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl">
       <div className="relative h-52">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
           className="w-full h-full object-cover"

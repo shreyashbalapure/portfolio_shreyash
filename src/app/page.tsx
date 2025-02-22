@@ -3,7 +3,6 @@ import Contact from "./components/contact/Contact";
 import Counter from "./components/hero/Counter";
 import Experience from "./components/experience/Experience";
 import Hero from "./components/hero/Hero";
-import Portfolio from "./components/projects/Portfolio";
 import TechStack from "./components/technologies/Technologies";
 
 export default function Home() {
