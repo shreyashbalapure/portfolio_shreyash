@@ -123,7 +123,7 @@ const Navbar = () => {
                   {item.toUpperCase()}
                 </ScrollLink>
               ))}
-              <button
+              {/* <button
                 onClick={() =>
                   setTheme(resolvedTheme === "dark" ? "light" : "dark")
                 }
@@ -135,7 +135,7 @@ const Navbar = () => {
                 ) : (
                   <BsMoonStars size={20} />
                 )}
-              </button>
+              </button> */}
             </div>
           </motion.div>
         )}
