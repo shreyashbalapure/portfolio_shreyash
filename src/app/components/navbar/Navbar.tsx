@@ -2,16 +2,17 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { HiMenu, HiX } from "react-icons/hi";
-// import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
-  // const { resolvedTheme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
+    setTheme(resolvedTheme === "dark" ? "light" : "dark")
   }, []);
 
   // Don't render anything until mounted to prevent hydration mismatches
