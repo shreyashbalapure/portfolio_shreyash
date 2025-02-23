@@ -85,7 +85,7 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className=" bg-[#0A0A0A] p-6 rounded-2xl w-full max-w-xs sm:max-w-md md:max-w-lg mx-auto space-y-4"
         >
-          <h2 className="text-lg sm:text-xl font-bold text-purple-600 text-center mb-4">
+          <h2 className="text-lg text-white sm:text-xl font-bold text-purple-600 text-center mb-4">
             Drop Me a Line
           </h2>
 
