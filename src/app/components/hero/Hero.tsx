@@ -95,9 +95,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="text-lg text-gray-600 dark:text-gray-300"
               >
-                Focused on creating and managing innovative websites and web
-                applications that contribute to business growth and deliver
-                impactful user experiences.
+                Dedicated to designing and developing dynamic websites and web applications that drive business success and enhance user engagement through seamless and impactful experiences.
               </motion.p>
 
               <motion.div

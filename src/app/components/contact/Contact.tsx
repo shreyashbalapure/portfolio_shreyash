@@ -83,7 +83,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           onSubmit={handleSubmit}
-          className="bg-white dark:bg-[#0A0A0A] p-6 rounded-2xl w-full max-w-xs sm:max-w-md md:max-w-lg mx-auto space-y-4"
+          className=" bg-[#0A0A0A] p-6 rounded-2xl w-full max-w-xs sm:max-w-md md:max-w-lg mx-auto space-y-4"
         >
           <h2 className="text-lg sm:text-xl font-bold text-purple-600 text-center mb-4">
             Drop Me a Line

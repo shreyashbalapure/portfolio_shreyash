@@ -17,25 +17,27 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-6 text-[#d946ef]">About Me</h2>
           <div className="space-y-4 text-gray-600 dark:text-gray-300 lg:text-lg">
             <p>
-              I am a Software Developer with a strong passion for building
-              innovative full-stack applications that solve real-world
-              challenges. Specializing in MERN stack development, I excel at
-              creating scalable, high-performance web solutions with seamless
-              user experiences and robust backend architectures.
+              I am a Software Developer with a strong passion for crafting
+              cutting-edge full-stack applications that drive business growth
+              and enhance user experiences. Specializing in modern web
+              technologies, I excel at building scalable, high-performance
+              solutions with intuitive front-end interfaces and robust backend
+              architectures.
             </p>
             <p>
-              Holding a Bachelor’s degree in Computer
-              Applications (BCA), I have honed my expertise in React.js,
-              Node.js, and competitive Java coding. My problem-solving skills,
-              backed by algorithmic thinking, enable me to develop efficient,
-              optimized solutions for complex technical challenges.
+              Holding a Bachelor's degree in Computer Applications (BCA), I have
+              developed expertise in Angular, React.js, Next.js, and backend
+              technologies, along with a solid foundation in database management
+              and RESTful API development. My problem-solving mindset, combined
+              with algorithmic thinking, allows me to create optimized and
+              efficient solutions for complex technical challenges.
             </p>
             <p>
-              Beyond development, I am an active contributor to open-source
-              projects and stay ahead of industry trends through continuous
-              learning and innovation. I thrive in collaborative environments,
-              where I can share knowledge, mentor others, and drive impactful
-              digital transformations.
+              Beyond development, I actively contribute to open-source projects
+              and continuously expand my knowledge to stay at the forefront of
+              emerging technologies. I thrive in collaborative environments,
+              where I can mentor others, share insights, and drive meaningful
+              digital innovation.
             </p>
           </div>
         </motion.div>
