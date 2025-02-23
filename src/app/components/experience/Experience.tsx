@@ -90,7 +90,7 @@ const Experience = () => {
 
   return (
     <section
-      className="py-12 md:py-16 dark:bg-[#0A0A0A] bg-white mx-auto px-4 md:px-10"
+      className="py-12 md:py-16 bg-[#0A0A0A] mx-auto px-4 md:px-10"
       ref={sectionRef}
     >
       <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-[#d946ef]">
