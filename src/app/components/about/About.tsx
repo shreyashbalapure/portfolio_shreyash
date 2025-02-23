@@ -23,6 +23,12 @@ export default function About() {
               technologies, I excel at building scalable, high-performance
               solutions with intuitive front-end interfaces and robust backend
               architectures.
+              I am a Software Developer with a strong passion for crafting
+              cutting-edge full-stack applications that drive business growth
+              and enhance user experiences. Specializing in modern web
+              technologies, I excel at building scalable, high-performance
+              solutions with intuitive front-end interfaces and robust backend
+              architectures.
             </p>
             <p>
               Holding a Bachelor’s degree in Computer Applications (BCA), I have
