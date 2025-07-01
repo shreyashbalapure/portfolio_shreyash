@@ -29,7 +29,7 @@ const Navbar = () => {
       text-slate-900 dark:text-slate-100 transition-all duration-300`}
     >
       <div className="relative inline-block">
-        <ScrollLink
+        {/* <ScrollLink
           to="home"
           smooth={true}
           duration={500}
@@ -38,7 +38,7 @@ const Navbar = () => {
           <span className="self-center text-xl font-semibold whitespace-nowrap text-[#14b8a6] underline">
             Shreyash Balapure
           </span>
-        </ScrollLink>
+        </ScrollLink> */}
       </div>
 
       <div className="hidden md:flex text-sm font-semibold items-center space-x-6">

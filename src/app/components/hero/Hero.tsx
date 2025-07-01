@@ -48,7 +48,7 @@ export default function HeroSection() {
                 initial={{ scale: 1.2, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="relative z-10 rounded-full lg:max-w-[50%] max-w-[60%] mx-auto outline outline-[0.3rem] outline-offset-[0.1rem] outline-purple-400/30"
+                className="relative z-10 rounded-full max-w-[35%] mx-auto outline outline-[0.3rem] outline-offset-[0.1rem] outline-purple-400/30"
                 src="/profile.png"
                 alt="Your Profile"
               />
