@@ -116,16 +116,7 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl">
-      {/* <div className="relative h-52">
-        <Image
-          src={project.image}
-          width={200}
-          height={200}
-          alt={project.title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-      </div> */}
+
 
       <div className="p-6">
         <h3 className="text-xl font-bold dark:text-white text-black mb-2">
