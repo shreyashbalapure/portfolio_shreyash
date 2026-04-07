@@ -21,6 +21,7 @@ const Technologies = () => {
       skills: [
         { name: "React.js", level: 90 },
         { name: "Next.js", level: 85 },
+        { name: "Angular", level: 80 },
         { name: "Tailwind CSS", level: 90 },
         { name: "HTML5/CSS3", level: 95 },
       ],
@@ -32,6 +33,8 @@ const Technologies = () => {
         { name: "Node.js", level: 85 },
         { name: "Express.js", level: 85 },
         { name: "RESTful APIs", level: 90 },
+        { name: ".NET Core", level: 80 },
+        { name: "Prisma", level: 80 },
       ],
     },
     {
@@ -41,6 +44,8 @@ const Technologies = () => {
         { name: "MongoDB", level: 85 },
         { name: "MySQL", level: 80 },
         { name: "PostgreSQL", level: 70 },
+        { name: "MSSQL", level: 85 },
+        { name: "NoSQL", level: 80 },
       ],
     },
     {
@@ -50,6 +55,7 @@ const Technologies = () => {
         { name: "JavaScript", level: 95 },
         { name: "TypeScript", level: 85 },
         { name: "Java", level: 90 },
+        { name: "SQL", level: 85 },
       ],
     },
     {
@@ -59,7 +65,8 @@ const Technologies = () => {
         { name: "Git & GitHub", level: 85 },
         { name: "Jira", level: 90 },
         { name: "Postman", level: 90 },
-        { name: "Android Studio", level: 70 },
+        { name: "Visual Studio", level: 85 },
+        { name: "VS Code", level: 95 },
       ],
     },
   ];

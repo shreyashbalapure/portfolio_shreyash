@@ -1,0 +1,92 @@
+Shreyash Balapure
+Pune, Maharashtra India
+ 9834375805
+# shreyashbalapure7@gmail.com
+ï linkedin.com/in/shreyashbalapure
+§ github.com/shreyashbalapure
+Summary
+A Software Developer with 2+ years of experience building scalable, workflow-driven web applications using React.js,
+Next.js, Angular, and .NET. Experienced in designing state-driven UIs, implementing secure authentication systems, and
+developing high-performance REST APIs. Strong focus on clean architecture, performance optimization, and delivering
+production-grade solutions in Agile environments.
+Technical Skills
+Languages: JavaScript, TypeScript, SQL, Java
+Frameworks/Technologies: React.js, Next.js, Angular, Redux, .NET, REST APIs, Prisma, Tailwind CSS, Bootstrap
+Database: MSSQL, PostgreSQL, NoSQL
+Developer Tools: Visual Studio, VS Code, Postman, Git, GitHub, Jenkins
+Cloud/Deployment: Azure (basic), Vercel
+Methodologies: Agile, Scrum, Jira
+Experience
+Baxture Technologies Pvt Ltd
+February 2024 – Present
+Software Developer
+Wakad, Pune
+• Developed and maintained full-stack applications using Next.js, React.js, and .NET APIs for seamless front-end and
+back-end integration.
+• Collaborated directly with clients to gather requirements, discuss feature enhancements, and provide technical solutions
+aligned with business goals.
+• Designed and implemented workflow-based modules for enterprise applications, handling complex state transitions and
+role-based access control.
+• Built and optimized RESTful APIs, implemented secure authentication with JWT, and enhanced application security
+through robust validation and error handling.
+• Worked extensively with MSSQL for writing stored procedures, joins, and transactions to support dynamic data-driven
+features.
+• Integrated ShadCN UI, Tailwind CSS, and Bootstrap for responsive, accessible, and high-performance user interfaces.
+• Used GitHub for version control and collaborated with cross-functional teams under Agile methodology to deliver
+scalable, production-ready solutions.
+Projects
+Uniform Case Management System (UCMS) | React.js, Redux, REST APIs, Role-Based Access
+• Developed a workflow-driven case management system to handle complete case lifecycles including creation, review,
+hearing, and closure.
+• Implemented state-driven UI using Redux to manage complex case transitions and ensure consistent application state.
+• Built role-based access control (RBAC) to manage permissions across multiple user roles and secure critical operations.
+• Integrated RESTful APIs for real-time case updates, document handling, and status tracking.
+• Enhanced performance and user experience through lazy loading, optimized rendering, and efficient state management.
+DocumentCapture by Wingen | Angular 20, .NET Core (FastEndpoints), Dropbox Signature API, MSSQL
+• Developed a digital document signing platform enabling clients and service providers to securely exchange and sign
+documents online.
+• Integrated Dropbox Signature APIs (formerly HelloSign) to streamline digital signature workflows with audit trails and
+secure storage.
+• Implemented backend services using .NET Core with FastEndpoints for high-performance RESTful API development
+and modular architecture.
+• Built a responsive front-end in Angular 20 with real-time updates, document tracking, and role-based access for different
+user levels.
+• Optimized API response times, improved user experience, ensured data security through proper validation and
+encryption.
+
+PartingOut.com Website | Angular, .NET Core, REST APIs, MSSQL
+• Developed a responsive and scalable e-commerce platform for vehicle parts management using Angular for the front-end
+and .NET Core for the backend.
+• Implemented RESTful APIs to handle product listings, user authentication, and order processing, ensuring efficient and
+secure data flow between client and server.
+• Worked with MSSQL to design and optimize database schemas and queries for reliable data management and improved
+application performance.
+• Integrated modern UI components for an intuitive shopping experience and ensured performance optimization through
+lazy loading and API caching.
+Ticketing System Application | Next.js, ShadCN UI, Prisma, PostgreSQL
+• Developed a scalable ticketing system for efficient issue tracking and management. Implemented a role-based access
+control system with separate modules for customers and admins. Customers can create, track, and update tickets, while
+admins can manage tickets, assign priorities, and provide resolutions. Integrated ShadCN UI for a modern and intuitive
+user experience. Used Prisma as an ORM for seamless interaction with PostgreSQL, ensuring efficient database
+operations and optimized performance.
+Education
+Savitribai Phule Pune University
+2023 – 2025
+Master of Computer Application - MCA
+CGPA : 7.42/10.00
+Sant Gadge Baba Amravati University
+2020 – 2023
+Bachelor of Computer Application - BCA
+Percentage : 84.57
+Coursework and Certification
+• Full Stack Web Development Course, Udemy
+• Java Full Stack Development Cource, JSpiders Pune
+• Web Developement Cource, CCIT Amravati
+• Certification of Diploma in Java ,CCIT Amravati
+• Certificate in Web Development from Sololearn
+Extracurricular Involvement
+• Participated in various coding competitions, including contests on HackerRank and LeetCode, enhancing algorithmic
+thinking and coding speed.
+• Utilized a variety of programming languages including JavaScript, Java, and C++ to tackle diverse challenges,
+enhancing versatility as a developer.
+

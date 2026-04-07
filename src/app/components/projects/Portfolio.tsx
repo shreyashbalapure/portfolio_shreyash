@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { FaGithub, FaCode, FaExternalLinkAlt } from "react-icons/fa";
-import Image, {} from "next/image"
+import Image, { } from "next/image"
 // Define the type for projects
 type Project = {
   title: string;
@@ -16,59 +16,91 @@ type Project = {
 // Sample projects data - replace with your own
 const projects: Project[] = [
   {
-    title: "Online food ordering website",
-    description:
-      "This project features a responsive UI and fully factional Backend allows users to browse and order food.",
-    image: "./Project1.jpeg",
-    techStack: ["React.js", "Node.js", "MongoDB", "Stripe", "Express.js"],
-    githubUrl: "https://github.com/shreyashbalapure/food_ordering-main",
-    liveUrl: "https://food-ordering-frontend-gbxz.onrender.com",
+    title: "Uniform Case Management System (UCMS)",
+    description: "Developed a workflow-driven case management system with real-time updates, handling complete case lifecycles with state-driven UI and role-based access control (RBAC).",
+    image: "/Project1.jpeg",
+    techStack: ["React.js", "Redux", "REST APIs", "RBAC"],
+    githubUrl: "https://github.com/shreyashbalapure",
+    liveUrl: "https://github.com/shreyashbalapure",
   },
   {
-    title: "Hotel booking web app",
-    description:
-      "Developed this to seamless room reservations, real-time availability, attractive UI for efficient bookings.",
-    image: "./Project2.jpeg",
-    techStack: ["Next.js", "Supabase", "JavaScript", "Chart.js"],
-    githubUrl: "https://github.com/shreyashbalapure/wild_oasis_admin",
-    liveUrl: "https://wild-oasis-customers.vercel.app",
+    title: "DocumentCapture by Wingen",
+    description: "Built a digital document signing platform integrating Dropbox Signature APIs for secure document exchange, featuring real-time tracking, audit trails, and multi-level role access.",
+    image: "/Project2.jpeg",
+    techStack: ["Angular 20", ".NET Core", "MSSQL", "Dropbox Signature API"],
+    githubUrl: "https://github.com/shreyashbalapure",
+    liveUrl: "https://github.com/shreyashbalapure",
   },
   {
-    title: "Job portal application",
-    description:
-      "Built a job portal application enabling seamless job posting, candidate management, and file upload functionality with an intuitive user experience.",
-    image: "./Project3.jpeg",
-    techStack: ["React.js", "Cloudinary", "Node.js", "MongoDB", "Express.js"],
-    githubUrl: "https://github.com/shreyashbalapure/Job_Portal",
-    liveUrl: "https://job-portal-frontend-rho.vercel.app",
+    title: "PartingOut.com Website",
+    description: "Developed a responsive and scalable e-commerce platform for vehicle parts management, implementing comprehensive REST APIs for product listings, auth, and order processing.",
+    image: "/Project3.jpeg",
+    techStack: ["Angular", ".NET Core", "MSSQL", "REST APIs"],
+    githubUrl: "https://github.com/shreyashbalapure",
+    liveUrl: "https://github.com/shreyashbalapure",
   },
   {
-    title: "Product's features display - API",
-    description:
-      "Fetched products from DummyJSON, featuring dynamic product search, filtering, favorites.",
-    image: "./Project4.jpeg",
-    techStack: ["React query", "React", "Tailwind CSS", "JavaScript"],
-    githubUrl: "https://github.com/shreyashbalapure/SOCON_Assignment_",
-    liveUrl: "https://socon-assignment.vercel.app",
+    title: "Ticketing System Application",
+    description: "Developed a scalable ticketing system with dual-module RBAC (customers/admins), leveraging ShadCN for modern UI and Prisma for seamless PostgreSQL interactions.",
+    image: "/Project4.jpeg",
+    techStack: ["Next.js", "ShadCN UI", "Prisma", "PostgreSQL"],
+    githubUrl: "https://github.com/shreyashbalapure",
+    liveUrl: "https://github.com/shreyashbalapure",
   },
-  {
-    title: "Fastest Pizza Booking UI",
-    description:
-      "Created the fastest Pizza Booking UI with a user-friendly cart feature and search functionality for a seamless ordering experience.",
-    image: "./Project5.jpeg",
-    techStack: ["React", "Redux", "JavaScript", "TailwindCSS"],
-    githubUrl: "https://github.com/shreyashbalapure/React_Pizz_App",
-    liveUrl: "https://react-pizz-app.vercel.app",
-  },
-  {
-    title: "Classy weather app",
-    description:
-      "Developed a sleek weather app to fetch and display real-time weather data, providing users with accurate and up-to-date forecasts in a polished interface.",
-    image: "./Project6.jpeg",
-    techStack: ["React", "Javascript", "CSS", "API"],
-    githubUrl: "https://github.com/shreyashbalapure/classy_weather",
-    liveUrl: "https://classy-weather-orcin.vercel.app",
-  },
+  // {
+  //   title: "Online food ordering website",
+  //   description:
+  //     "This project features a responsive UI and fully factional Backend allows users to browse and order food.",
+  //   image: "/Project5.jpeg",
+  //   techStack: ["React.js", "Node.js", "MongoDB", "Stripe", "Express.js"],
+  //   githubUrl: "https://github.com/shreyashbalapure/food_ordering-main",
+  //   liveUrl: "https://food-ordering-frontend-gbxz.onrender.com",
+  // },
+  // {
+  //   title: "Hotel booking web app",
+  //   description:
+  //     "Developed this to seamless room reservations, real-time availability, attractive UI for efficient bookings.",
+  //   image: "/Project2.jpeg",
+  //   techStack: ["Next.js", "Supabase", "JavaScript", "Chart.js"],
+  //   githubUrl: "https://github.com/shreyashbalapure/wild_oasis_admin",
+  //   liveUrl: "https://wild-oasis-customers.vercel.app",
+  // },
+  // {
+  //   title: "Job portal application",
+  //   description:
+  //     "Built a job portal application enabling seamless job posting, candidate management, and file upload functionality with an intuitive user experience.",
+  //   image: "/Project3.jpeg",
+  //   techStack: ["React.js", "Cloudinary", "Node.js", "MongoDB", "Express.js"],
+  //   githubUrl: "https://github.com/shreyashbalapure/Job_Portal",
+  //   liveUrl: "https://job-portal-frontend-rho.vercel.app",
+  // },
+  // {
+  //   title: "Product's features display - API",
+  //   description:
+  //     "Fetched products from DummyJSON, featuring dynamic product search, filtering, favorites.",
+  //   image: "/Project4.jpeg",
+  //   techStack: ["React query", "React", "Tailwind CSS", "JavaScript"],
+  //   githubUrl: "https://github.com/shreyashbalapure/SOCON_Assignment_",
+  //   liveUrl: "https://socon-assignment.vercel.app",
+  // },
+  // {
+  //   title: "Fastest Pizza Booking UI",
+  //   description:
+  //     "Created the fastest Pizza Booking UI with a user-friendly cart feature and search functionality for a seamless ordering experience.",
+  //   image: "/Project5.jpeg",
+  //   techStack: ["React", "Redux", "JavaScript", "TailwindCSS"],
+  //   githubUrl: "https://github.com/shreyashbalapure/React_Pizz_App",
+  //   liveUrl: "https://react-pizz-app.vercel.app",
+  // },
+  // {
+  //   title: "Classy weather app",
+  //   description:
+  //     "Developed a sleek weather app to fetch and display real-time weather data, providing users with accurate and up-to-date forecasts in a polished interface.",
+  //   image: "/Project6.jpeg",
+  //   techStack: ["React", "Javascript", "CSS", "API"],
+  //   githubUrl: "https://github.com/shreyashbalapure/classy_weather",
+  //   liveUrl: "https://classy-weather-orcin.vercel.app",
+  // },
 ];
 
 function TechStackBadge({ tech }: { tech: string }) {
@@ -84,14 +116,16 @@ function ProjectCard({ project }: { project: Project }) {
 
   return (
     <div className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl">
-      <div className="relative h-52">
+      {/* <div className="relative h-52">
         <Image
           src={project.image}
+          width={200}
+          height={200}
           alt={project.title}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-      </div>
+      </div> */}
 
       <div className="p-6">
         <h3 className="text-xl font-bold dark:text-white text-black mb-2">

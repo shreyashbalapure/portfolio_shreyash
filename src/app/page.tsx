@@ -4,6 +4,7 @@ import Counter from "./components/hero/Counter";
 import Experience from "./components/experience/Experience";
 import Hero from "./components/hero/Hero";
 import TechStack from "./components/technologies/Technologies";
+import Portfolio from "./components/projects/Portfolio";
 
 export default function Home() {
   return (
@@ -23,9 +24,10 @@ export default function Home() {
       <section id="techstack">
         <TechStack />
       </section>
-      {/* <section id="projects">
+      {/* <section id="projects"> */}
+      <section id="projects">
         <Portfolio />
-      </section> */}
+      </section>
       <section id="contact">
         <Contact />
       </section>

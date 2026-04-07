@@ -75,12 +75,13 @@ const Experience = () => {
       "location": "Wakad, Pune",
       "period": "February 2024 – Present",
       "responsibilities": [
-        "Developing full-stack applications using Next.js and React.js, with expertise in JavaScript, HTML, and CSS.",
-        "Built and optimized RESTful APIs in Next.js, ensuring efficient data handling and seamless client-server communication.",
-        "Implemented secure authentication using NextAuth and JWT, enhancing application security and user management.",
-        "Integrated ShadCN components for a modern and scalable UI, along with Tailwind CSS and Bootstrap for responsive design.",
-        "Utilized GitHub for version control and collaboration, ensuring clean and maintainable code.",
-        "Focused on performance optimization and best practices to improve application efficiency and user experience."
+        "Developed and maintained full-stack applications using Next.js, React.js, and .NET APIs for seamless front-end and back-end integration.",
+        "Collaborated directly with clients to gather requirements, discuss feature enhancements, and provide technical solutions aligned with business goals.",
+        "Designed and implemented workflow-based modules for enterprise applications, handling complex state transitions and role-based access control.",
+        "Built and optimized RESTful APIs, implemented secure authentication with JWT, and enhanced application security through robust validation and error handling.",
+        "Worked extensively with MSSQL for writing stored procedures, joins, and transactions to support dynamic data-driven features.",
+        "Integrated ShadCN UI, Tailwind CSS, and Bootstrap for responsive, accessible, and high-performance user interfaces.",
+        "Used GitHub for version control and collaborated with cross-functional teams under Agile methodology to deliver scalable, production-ready solutions."
       ]
     }
   ]
