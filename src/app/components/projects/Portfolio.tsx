@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { FaGithub, FaCode, FaExternalLinkAlt } from "react-icons/fa";
-import Image, { } from "next/image"
 // Define the type for projects
 type Project = {
   title: string;
