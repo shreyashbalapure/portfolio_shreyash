@@ -63,14 +63,14 @@ const Counter: React.FC = () => {
     {
       id: 2,
       icon: <FaLaptopCode size={35} color="white" />,
-      count: 10, // Technologies
-      heading: "Technologies",
+      count: 4, // Production Apps
+      heading: "Production Applications",
     },
     {
       id: 3,
       icon: <AiOutlineFundProjectionScreen size={35} color="white" />,
-      count: 15, // Completed Projects
-      heading: "Completed Projects",
+      count: 15, // RESTful APIs Built
+      heading: "RESTful APIs Built",
     },
     {
       id: 4,

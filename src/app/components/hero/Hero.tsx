@@ -73,14 +73,16 @@ export default function HeroSection() {
                 <span className="text-[#d946ef]">SHREYASH BALAPURE</span>
               </motion.h2>
 
-              <div className="text-xl text-gray-800 dark:text-gray-200">
+              <div className="text-xl font-medium text-gray-800 dark:text-gray-200">
                 <TypeAnimation
                   sequence={[
-                    "A Software Developer",
+                    "Full-Stack Software Developer",
                     2000,
-                    "A Web Developer",
+                    "React.js & Next.js Developer",
                     2000,
-                    "A Full Stack Developer",
+                    ".NET Core & Angular Engineer",
+                    2000,
+                    "AI & Workflow Automation Developer",
                     2000,
                   ]}
                   wrapper="span"
@@ -93,9 +95,9 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
-                className="text-lg text-gray-600 dark:text-gray-300"
+                className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
               >
-                Dedicated to designing and developing dynamic websites and web applications that drive business success and enhance user engagement through seamless and impactful experiences.
+                Full-Stack Software Developer with 2+ years of experience delivering scalable, workflow-driven web applications and AI-integrated products using React.js, Next.js, Angular, .NET Core, and Groq LLM automation pipelines.
               </motion.p>
 
               <motion.div
@@ -109,7 +111,7 @@ export default function HeroSection() {
                     <button
                       type="button"
                       title="Download CV"
-                      className="relative inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                      className="relative inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 cursor-pointer"
                       onClick={handleDownload}
                     >
                       <FaDownload className="w-4 h-4 mr-2" />

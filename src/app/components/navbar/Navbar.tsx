@@ -29,16 +29,16 @@ const Navbar = () => {
       text-slate-900 dark:text-slate-100 transition-all duration-300`}
     >
       <div className="relative inline-block">
-        {/* <ScrollLink
+        <ScrollLink
           to="home"
           smooth={true}
           duration={500}
           className="flex items-center cursor-pointer"
         >
-          <span className="self-center text-xl font-semibold whitespace-nowrap text-[#14b8a6] underline">
+          <span className="self-center text-xl font-bold tracking-tight text-[#14b8a6] hover:text-[#d946ef] transition-colors">
             Shreyash Balapure
           </span>
-        </ScrollLink> */}
+        </ScrollLink>
       </div>
 
       <div className="hidden md:flex text-sm font-semibold items-center space-x-6">
@@ -47,7 +47,8 @@ const Navbar = () => {
           "about",
           "experience",
           "technologies",
-          // "projects",
+          "projects",
+          "education",
           "contact",
         ].map((item) => (
           <ScrollLink
@@ -56,23 +57,12 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="cursor-pointer hover:text-[#14b8a6] transition-colors"
-            activeClass="active"
+            activeClass="active text-[#14b8a6]"
             spy={true}
           >
             {item.toUpperCase()}
           </ScrollLink>
         ))}
-        {/* <button
-          onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white transition-colors"
-          aria-label="Toggle dark mode"
-        >
-          {resolvedTheme === "dark" ? (
-            <LuSunMoon size={20} />
-          ) : (
-            <BsMoonStars size={20} />
-          )}
-        </button> */}
       </div>
 
       {/* Mobile Menu Button */}
@@ -90,13 +80,13 @@ const Navbar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="absolute top-0 left-0 w-full bg-white backdrop-blur-md dark:bg-slate-900/90 shadow-lg rounded-md"
+            className="absolute top-0 left-0 w-full bg-white backdrop-blur-md dark:bg-slate-900/95 shadow-lg rounded-md"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -100 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <div className="flex flex-col items-center py-6 space-y-6">
+            <div className="flex flex-col items-center py-6 space-y-4">
               <HiX
                 onClick={() => setIsMenuOpen(false)}
                 className="absolute top-6 right-6 text-slate-900 dark:text-white cursor-pointer"
@@ -106,8 +96,9 @@ const Navbar = () => {
                 "home",
                 "about",
                 "experience",
-                "techstack",
-                // "projects",
+                "technologies",
+                "projects",
+                "education",
                 "contact",
               ].map((item) => (
                 <ScrollLink
@@ -115,26 +106,14 @@ const Navbar = () => {
                   to={item}
                   smooth={true}
                   duration={500}
-                  className="block px-6 py-3 w-full text-center text-sm cursor-pointer hover:text-[#14b8a6] transition-colors"
-                  activeClass="active"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block px-6 py-2 w-full text-center text-sm font-semibold cursor-pointer hover:text-[#14b8a6] transition-colors"
+                  activeClass="active text-[#14b8a6]"
                   spy={true}
                 >
                   {item.toUpperCase()}
                 </ScrollLink>
               ))}
-              {/* <button
-                onClick={() =>
-                  setTheme(resolvedTheme === "dark" ? "light" : "dark")
-                }
-                className="p-3 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white transition-colors mt-4"
-                aria-label="Toggle dark mode"
-              >
-                {resolvedTheme === "dark" ? (
-                  <LuSunMoon size={20} />
-                ) : (
-                  <BsMoonStars size={20} />
-                )}
-              </button> */}
             </div>
           </motion.div>
         )}

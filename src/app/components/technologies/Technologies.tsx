@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaCode, FaDatabase, FaDesktop, FaServer } from "react-icons/fa";
-import { IoMdSettings } from "react-icons/io";
+import { FaCode, FaDatabase, FaDesktop, FaServer, FaRobot, FaCloud } from "react-icons/fa";
 
 interface TechnologyCategory {
   title: string;
@@ -19,54 +18,65 @@ const Technologies = () => {
       title: "Frontend Development",
       icon: <FaCode className="w-6 h-6 text-[#14b8a6]" />,
       skills: [
-        { name: "React.js", level: 90 },
-        { name: "Next.js", level: 85 },
-        { name: "Angular", level: 80 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "HTML5/CSS3", level: 95 },
+        { name: "React.js", level: 92 },
+        { name: "Next.js", level: 90 },
+        { name: "Angular", level: 85 },
+        { name: "Tailwind CSS & ShadCN UI", level: 92 },
+        { name: "Redux & State Management", level: 88 },
+        { name: "Jest (Unit Testing)", level: 80 },
       ],
     },
     {
-      title: "Backend Development",
+      title: "Backend & REST APIs",
       icon: <FaServer className="w-6 h-6 text-[#14b8a6]" />,
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Express.js", level: 85 },
-        { name: "RESTful APIs", level: 90 },
-        { name: ".NET Core", level: 80 },
-        { name: "Prisma", level: 80 },
+        { name: ".NET Core (FastEndpoints)", level: 88 },
+        { name: "RESTful API Architecture", level: 95 },
+        { name: "Node.js & Express", level: 85 },
+        { name: "JWT Authentication & RBAC", level: 92 },
+        { name: "Prisma ORM", level: 85 },
       ],
     },
     {
-      title: "Database",
+      title: "AI & Workflow Automation",
+      icon: <FaRobot className="w-6 h-6 text-[#14b8a6]" />,
+      skills: [
+        { name: "Groq LLM API Integration", level: 90 },
+        { name: "n8n Workflow Automation", level: 88 },
+        { name: "Prompt Engineering", level: 88 },
+        { name: "AI-Generated Content Pipelines", level: 85 },
+        { name: "Apify Web Scraping", level: 82 },
+      ],
+    },
+    {
+      title: "Databases",
       icon: <FaDatabase className="w-6 h-6 text-[#14b8a6]" />,
       skills: [
-        { name: "MongoDB", level: 85 },
-        { name: "MySQL", level: 80 },
-        { name: "PostgreSQL", level: 70 },
-        { name: "MSSQL", level: 85 },
-        { name: "NoSQL", level: 80 },
+        { name: "MSSQL (Stored Procedures)", level: 90 },
+        { name: "PostgreSQL (Neon)", level: 88 },
+        { name: "NoSQL Databases", level: 80 },
+        { name: "Database Query Optimization", level: 85 },
       ],
     },
     {
       title: "Programming Languages",
       icon: <FaDesktop className="w-6 h-6 text-[#14b8a6]" />,
       skills: [
-        { name: "JavaScript", level: 95 },
-        { name: "TypeScript", level: 85 },
-        { name: "Java", level: 90 },
-        { name: "SQL", level: 85 },
+        { name: "JavaScript (ES6+)", level: 95 },
+        { name: "TypeScript", level: 90 },
+        { name: "SQL", level: 90 },
+        { name: "Java", level: 85 },
       ],
     },
     {
-      title: "Tools",
-      icon: <IoMdSettings className="w-6 h-6 text-[#14b8a6]" />,
+      title: "Cloud, DevOps & Tools",
+      icon: <FaCloud className="w-6 h-6 text-[#14b8a6]" />,
       skills: [
-        { name: "Git & GitHub", level: 85 },
-        { name: "Jira", level: 90 },
-        { name: "Postman", level: 90 },
-        { name: "Visual Studio", level: 85 },
-        { name: "VS Code", level: 95 },
+        { name: "Git & GitHub / Version Control", level: 92 },
+        { name: "Azure & Vercel Deployment", level: 85 },
+        { name: "Jenkins CI/CD Pipelines", level: 82 },
+        { name: "Postman & Visual Studio / VS Code", level: 95 },
+        { name: "Agile, Scrum & Jira", level: 90 },
       ],
     },
   ];

@@ -1,148 +1,184 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaGithub, FaCode, FaExternalLinkAlt } from "react-icons/fa";
-// Define the type for projects
+import { FaGithub, FaCode, FaExternalLinkAlt, FaChevronDown, FaChevronUp, FaRobot } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 type Project = {
   title: string;
-  description: string;
-  image: string;
+  tagline: string;
+  category: string;
+  highlights: string[];
   techStack: string[];
   githubUrl: string;
   liveUrl: string;
+  isFeatured?: boolean;
 };
 
-// Sample projects data - replace with your own
 const projects: Project[] = [
   {
+    title: "IndiaTechPulse",
+    tagline: "AI Job Aggregator, Content Brief Generator & Auto-Applier",
+    category: "AI & Full-Stack Platform",
+    isFeatured: true,
+    highlights: [
+      "Built a full-stack job-aggregation platform for the Indian tech market, consolidating listings from multiple sources into a unified, searchable feed.",
+      "Integrated Groq’s LLM API to auto-generate concise AI-written briefs for each job listing, improving content scannability.",
+      "Designed n8n automation workflows for web scraping, data ingestion, and resume-to-job matching pipelines.",
+      "Bypassed anti-bot restrictions (Cloudflare, Akamai) on major job portals by integrating Apify scraping actors.",
+      "Developed companion LinkedIn auto-applier control panel ('Antigravity') exposing secure API endpoints for server-side job application automation.",
+      "Deployed on Vercel with PostgreSQL (Neon) primary datastore for job listings, skill trends, and user connections."
+    ],
+    techStack: ["Next.js", "Groq API (LLM)", "n8n", "PostgreSQL (Neon)", "Apify", "Vercel"],
+    githubUrl: "https://github.com/shreyashbalapure",
+    liveUrl: "https://github.com/shreyashbalapure",
+  },
+  {
     title: "Uniform Case Management System (UCMS)",
-    description: "Developed a workflow-driven case management system with real-time updates, handling complete case lifecycles with state-driven UI and role-based access control (RBAC).",
-    image: "/Project1.jpeg",
-    techStack: ["React.js", "Redux", "REST APIs", "RBAC"],
+    tagline: "Enterprise Case Processing & Workflow Management System",
+    category: "Full-Stack Enterprise",
+    isFeatured: true,
+    highlights: [
+      "Workflow-driven case management system processing 100+ active cases across 5+ lifecycle stages (creation, review, hearing, appeal, closure).",
+      "Implemented Redux-based state management across 8+ complex transition flows, reducing state-related bugs by 40%.",
+      "Designed RBAC for 4+ user roles securing access to 15+ critical operations with zero unauthorized action attempts.",
+      "Integrated 10+ RESTful API endpoints for real-time case updates & document tracking (cutting latency by 35%).",
+      "Authored 30+ Jest unit tests across components and API handlers to improve code reliability and prevent regressions.",
+      "Optimized application performance by 45% via lazy loading and rendering tuning, reducing initial load time from 4s to <2.5s."
+    ],
+    techStack: ["React.js", "Redux", "REST APIs", "RBAC", "JWT", "Jest"],
     githubUrl: "https://github.com/shreyashbalapure",
     liveUrl: "https://github.com/shreyashbalapure",
   },
   {
     title: "DocumentCapture by Wingen",
-    description: "Built a digital document signing platform integrating Dropbox Signature APIs for secure document exchange, featuring real-time tracking, audit trails, and multi-level role access.",
-    image: "/Project2.jpeg",
-    techStack: ["Angular 20", ".NET Core", "MSSQL", "Dropbox Signature API"],
-    githubUrl: "https://github.com/shreyashbalapure",
-    liveUrl: "https://github.com/shreyashbalapure",
-  },
-  {
-    title: "PartingOut.com Website",
-    description: "Developed a responsive and scalable e-commerce platform for vehicle parts management, implementing comprehensive REST APIs for product listings, auth, and order processing.",
-    image: "/Project3.jpeg",
-    techStack: ["Angular", ".NET Core", "MSSQL", "REST APIs"],
+    tagline: "Digital Document Signing & Audit Trail Platform",
+    category: "Enterprise Web App",
+    isFeatured: true,
+    highlights: [
+      "Digital document signing platform processing 500+ documents monthly with zero data loss, enabling secure client-service exchange.",
+      "Integrated Dropbox Signature API (formerly HelloSign) with full audit trail support, reducing turnaround time by 60%.",
+      "Built 12+ FastEndpoints API routes achieving sub-200ms average response time for document retrieval and status operations.",
+      "Implemented Angular front-end with real-time tracking, RBAC for 3 user levels, and AES encryption for all stored documents.",
+      "Optimized MSSQL queries and added API-level caching, cutting average database query time by 30%."
+    ],
+    techStack: ["Angular", ".NET Core (FastEndpoints)", "Dropbox Signature API", "MSSQL", "AES Encryption"],
     githubUrl: "https://github.com/shreyashbalapure",
     liveUrl: "https://github.com/shreyashbalapure",
   },
   {
     title: "Ticketing System Application",
-    description: "Developed a scalable ticketing system with dual-module RBAC (customers/admins), leveraging ShadCN for modern UI and Prisma for seamless PostgreSQL interactions.",
-    image: "/Project4.jpeg",
-    techStack: ["Next.js", "ShadCN UI", "Prisma", "PostgreSQL"],
+    tagline: "Full-Stack End-to-End Issue Tracking & Queue Management",
+    category: "Full-Stack System",
+    isFeatured: false,
+    highlights: [
+      "Scalable ticketing system supporting end-to-end issue tracking and priority-based resolution management.",
+      "Dual-module RBAC: customer module (create, track, update tickets) and admin module (assign priorities, manage queues, resolve issues).",
+      "Integrated ShadCN UI component library for a modern accessible interface, cutting component build time by 30%.",
+      "Designed normalized PostgreSQL schema with Prisma ORM, reducing redundant queries by 25%."
+    ],
+    techStack: ["Next.js", "ShadCN UI", "Prisma", "PostgreSQL", "RBAC"],
     githubUrl: "https://github.com/shreyashbalapure",
     liveUrl: "https://github.com/shreyashbalapure",
   },
-  // {
-  //   title: "Online food ordering website",
-  //   description:
-  //     "This project features a responsive UI and fully factional Backend allows users to browse and order food.",
-  //   image: "/Project5.jpeg",
-  //   techStack: ["React.js", "Node.js", "MongoDB", "Stripe", "Express.js"],
-  //   githubUrl: "https://github.com/shreyashbalapure/food_ordering-main",
-  //   liveUrl: "https://food-ordering-frontend-gbxz.onrender.com",
-  // },
-  // {
-  //   title: "Hotel booking web app",
-  //   description:
-  //     "Developed this to seamless room reservations, real-time availability, attractive UI for efficient bookings.",
-  //   image: "/Project2.jpeg",
-  //   techStack: ["Next.js", "Supabase", "JavaScript", "Chart.js"],
-  //   githubUrl: "https://github.com/shreyashbalapure/wild_oasis_admin",
-  //   liveUrl: "https://wild-oasis-customers.vercel.app",
-  // },
-  // {
-  //   title: "Job portal application",
-  //   description:
-  //     "Built a job portal application enabling seamless job posting, candidate management, and file upload functionality with an intuitive user experience.",
-  //   image: "/Project3.jpeg",
-  //   techStack: ["React.js", "Cloudinary", "Node.js", "MongoDB", "Express.js"],
-  //   githubUrl: "https://github.com/shreyashbalapure/Job_Portal",
-  //   liveUrl: "https://job-portal-frontend-rho.vercel.app",
-  // },
-  // {
-  //   title: "Product's features display - API",
-  //   description:
-  //     "Fetched products from DummyJSON, featuring dynamic product search, filtering, favorites.",
-  //   image: "/Project4.jpeg",
-  //   techStack: ["React query", "React", "Tailwind CSS", "JavaScript"],
-  //   githubUrl: "https://github.com/shreyashbalapure/SOCON_Assignment_",
-  //   liveUrl: "https://socon-assignment.vercel.app",
-  // },
-  // {
-  //   title: "Fastest Pizza Booking UI",
-  //   description:
-  //     "Created the fastest Pizza Booking UI with a user-friendly cart feature and search functionality for a seamless ordering experience.",
-  //   image: "/Project5.jpeg",
-  //   techStack: ["React", "Redux", "JavaScript", "TailwindCSS"],
-  //   githubUrl: "https://github.com/shreyashbalapure/React_Pizz_App",
-  //   liveUrl: "https://react-pizz-app.vercel.app",
-  // },
-  // {
-  //   title: "Classy weather app",
-  //   description:
-  //     "Developed a sleek weather app to fetch and display real-time weather data, providing users with accurate and up-to-date forecasts in a polished interface.",
-  //   image: "/Project6.jpeg",
-  //   techStack: ["React", "Javascript", "CSS", "API"],
-  //   githubUrl: "https://github.com/shreyashbalapure/classy_weather",
-  //   liveUrl: "https://classy-weather-orcin.vercel.app",
-  // },
+  {
+    title: "PartingOut.com Website",
+    tagline: "E-Commerce & Inventory Management System for Vehicle Parts",
+    category: "E-Commerce",
+    isFeatured: false,
+    highlights: [
+      "Responsive e-commerce platform built for vehicle parts catalog management, inventory tracking, and sales.",
+      "Implemented RESTful APIs in .NET Core for secure user authentication, product listings, and order lifecycle management.",
+      "Optimized relational database queries in MSSQL for high-throughput product searches and cart operations."
+    ],
+    techStack: ["Angular", ".NET Core", "MSSQL", "REST APIs"],
+    githubUrl: "https://github.com/shreyashbalapure",
+    liveUrl: "https://github.com/shreyashbalapure",
+  },
+  {
+    title: "Food Ordering & Restaurant Portal",
+    tagline: "Responsive Online Food Ordering & Payment System",
+    category: "E-Commerce / Full-Stack",
+    isFeatured: false,
+    highlights: [
+      "Full-stack food ordering portal allowing users to browse menu items, filter categories, customize orders, and process payments.",
+      "Integrated Stripe API for secure checkout workflows and real-time transaction feedback.",
+      "Built admin order management dashboard for live order tracking and menu configuration."
+    ],
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe API"],
+    githubUrl: "https://github.com/shreyashbalapure/food_ordering-main",
+    liveUrl: "https://food-ordering-frontend-gbxz.onrender.com",
+  },
 ];
 
 function TechStackBadge({ tech }: { tech: string }) {
   return (
-    <span className="px-2 py-1 text-xs font-medium dark:bg-slate-600 bg-slate-400 text-white rounded-full">
+    <span className="px-2.5 py-1 text-xs font-semibold bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-md">
       {tech}
     </span>
   );
 }
 
 function ProjectCard({ project }: { project: Project }) {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-slate-900 rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-[1.02] hover:shadow-xl">
-
-
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bg-gray-50 dark:bg-slate-900 border border-gray-200 dark:border-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between hover:shadow-2xl transition-all duration-300"
+    >
       <div className="p-6">
-        <h3 className="text-xl font-bold dark:text-white text-black mb-2">
-          {project.title}
-        </h3>
-
-        {/* Paragraph with Tooltip on Hover */}
-        <div
-          className="relative"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          <p className="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-2">
-            {project.description}
-          </p>
-
-          {isHovered && (
-            <div className="absolute left-0 top-full mt-1 w-full bg-gray-900 text-white text-xs rounded-md shadow-lg p-2 z-10">
-              {project.description}
-            </div>
+        {/* Category & Badge */}
+        <div className="flex justify-between items-center mb-3">
+          <span className="text-xs font-bold uppercase tracking-wider text-[#14b8a6]">
+            {project.category}
+          </span>
+          {project.isFeatured && (
+            <span className="inline-flex items-center gap-1 text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-purple-500/10 text-[#d946ef] border border-purple-500/20">
+              <FaRobot className="w-3 h-3" /> Featured
+            </span>
           )}
         </div>
 
+        {/* Title */}
+        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 leading-tight">
+          {project.title}
+        </h3>
+        <p className="text-sm font-medium text-gray-600 dark:text-gray-400 mb-4">
+          {project.tagline}
+        </p>
+
+        {/* Highlights List */}
         <div className="mb-4">
-          <h4 className="text-xs font-semibold text-[#d946ef] mb-2 flex items-center gap-1.5">
-            <FaCode className="w-3.5 h-3.5" />
-            Tech Stack
+          <ul className="space-y-2">
+            {(isExpanded ? project.highlights : project.highlights.slice(0, 2)).map((highlight, idx) => (
+              <li key={idx} className="flex items-start gap-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                <span className="text-[#14b8a6] font-bold text-base leading-none">•</span>
+                <span>{highlight}</span>
+              </li>
+            ))}
+          </ul>
+
+          {project.highlights.length > 2 && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-3 text-xs font-bold text-[#d946ef] hover:underline flex items-center gap-1 transition-colors"
+            >
+              {isExpanded ? (
+                <>Show Less <FaChevronUp className="w-3 h-3" /></>
+              ) : (
+                <>Read {project.highlights.length - 2} More Details <FaChevronDown className="w-3 h-3" /></>
+              )}
+            </button>
+          )}
+        </div>
+
+        {/* Tech Stack */}
+        <div className="mb-6">
+          <h4 className="text-xs font-semibold text-[#d946ef] mb-2 flex items-center gap-1">
+            <FaCode className="w-3.5 h-3.5" /> Tech Stack
           </h4>
           <div className="flex flex-wrap gap-1.5">
             {project.techStack.map((tech) => (
@@ -150,45 +186,43 @@ function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
         </div>
-
-        <div className="flex gap-3">
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 border border-gray-300 dark:border-gray-700 rounded-md text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-          >
-            <FaGithub className="w-4 h-4" />
-            Code
-          </a>
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 bg-[#14b8a6] border border-transparent rounded-md text-sm font-medium text-white hover:bg-[#10a396] transition-colors"
-          >
-            <FaExternalLinkAlt className="w-4 h-4" />
-            Demo
-          </a>
-        </div>
       </div>
-    </div>
+
+      {/* Buttons */}
+      <div className="p-6 pt-0 flex gap-3 mt-auto">
+        <a
+          href={project.githubUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-xl text-sm font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        >
+          <FaGithub className="w-4 h-4" /> Code
+        </a>
+        <a
+          href={project.liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#14b8a6] border border-transparent rounded-xl text-sm font-semibold text-white hover:bg-[#10a396] transition-colors"
+        >
+          <FaExternalLinkAlt className="w-3.5 h-3.5" /> View Project
+        </a>
+      </div>
+    </motion.div>
   );
 }
 
 const Portfolio: React.FC = () => {
   return (
     <section
-      id="portfolio"
-      className="dark:bg-[#0A0A0A] overflow-x-hidden py-16 mx-auto px-6"
+      id="projects"
+      className="dark:bg-[#0A0A0A] bg-white overflow-x-hidden py-16 mx-auto px-4 md:px-10"
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 text-[#d946ef] text-center">
-          Featured Projects
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold mb-4 text-[#d946ef] text-center">
+          Featured Projects & Achievements
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto">
-          Explore my latest projects showcasing my expertise in full-stack
-          development, from web applications to mobile solutions.
+        <p className="text-gray-600 dark:text-gray-300 text-center mb-12 max-w-2xl mx-auto text-sm sm:text-base">
+          Production-grade applications and workflow automation tools designed and deployed with modern full-stack architectures and AI integrations.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

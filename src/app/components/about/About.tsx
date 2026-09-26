@@ -15,32 +15,17 @@ export default function About() {
           className="w-full md:w-1/2 md:pl-12 mb-5"
         >
           <h2 className="text-3xl font-bold mb-6 text-[#d946ef]">About Me</h2>
-          <div className="space-y-4 text-gray-600 dark:text-gray-300 lg:text-lg">
+          <div className="space-y-4 text-gray-600 dark:text-gray-300 lg:text-lg leading-relaxed">
             <p>
-              With over 2 years of experience as a Software Developer, I have a
-              strong passion for crafting scalable, workflow-driven full-stack
-              applications that drive business growth. Specializing in modern web
-              technologies like React.js, Next.js, Angular, and .NET, I excel at
-              building high-performance solutions with state-driven front-end
-              interfaces and robust backend REST API architectures.
+              I am a <strong>Full-Stack Software Developer</strong> with over 2 years of professional experience delivering scalable, workflow-driven web applications and AI-powered products. My core stack includes <strong>React.js, Next.js, Angular, and .NET Core</strong>, backed by strong relational database architecture using <strong>MSSQL and PostgreSQL (Neon)</strong>.
             </p>
-          <p>
-            Holding a Master of Computer Application (MCA) degree, I have
-            developed expertise in Next.js, React.js, Angular, Redux, and
-            .NET technologies, along with a solid foundation in extensive
-            database management (MSSQL, PostgreSQL) and RESTful API development.
-            My problem-solving mindset, combined with algorithmic thinking,
-            allows me to create optimized and efficient solutions for complex
-            technical challenges.
-          </p>
-          <p>
-            Beyond development, I actively contribute to open-source projects
-            and continuously expand my knowledge to stay at the forefront of
-            emerging technologies. I thrive in collaborative environments,
-            where I can mentor others, share insights, and drive meaningful
-            digital innovation.
-          </p>
-      </div>
+            <p>
+              Currently at <strong>Baxture Technologies</strong>, I design state-driven user interfaces, architect secure JWT authentication with Role-Based Access Control (RBAC), and build high-performance RESTful APIs. I also specialize in <strong>AI Integration & Workflow Automation</strong>—leveraging <strong>Groq LLM APIs</strong> and <strong>n8n automation pipelines</strong> to power intelligent content generation and data processing workflows.
+            </p>
+            <p>
+              Holding a <strong>Master of Computer Application (MCA)</strong> degree from Savitribai Phule Pune University (CGPA 7.42) and a <strong>BCA</strong> (84.57%), I combine theoretical computer science fundamentals with an active competitive programming mindset (LeetCode / HackerRank). I thrive in Agile/Scrum environments shipping reliable, production-grade software on time.
+            </p>
+          </div>
     </motion.div>
 
         {/* Image Section */ }

@@ -5,6 +5,7 @@ import Experience from "./components/experience/Experience";
 import Hero from "./components/hero/Hero";
 import TechStack from "./components/technologies/Technologies";
 import Portfolio from "./components/projects/Portfolio";
+import Education from "./components/education/Education";
 
 export default function Home() {
   return (
@@ -21,12 +22,14 @@ export default function Home() {
       <section id="experience">
         <Experience />
       </section>
-      <section id="techstack">
+      <section id="technologies">
         <TechStack />
       </section>
-      {/* <section id="projects"> */}
       <section id="projects">
         <Portfolio />
+      </section>
+      <section id="education">
+        <Education />
       </section>
       <section id="contact">
         <Contact />

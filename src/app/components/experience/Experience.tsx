@@ -70,21 +70,21 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
 const Experience = () => {
   const experiences = [
     {
-      "title": "Software Developer",
-      "company": "Baxture Technologies Pvt Ltd",
-      "location": "Wakad, Pune",
-      "period": "February 2024 – Present",
-      "responsibilities": [
-        "Developed and maintained full-stack applications using Next.js, React.js, and .NET APIs for seamless front-end and back-end integration.",
-        "Collaborated directly with clients to gather requirements, discuss feature enhancements, and provide technical solutions aligned with business goals.",
-        "Designed and implemented workflow-based modules for enterprise applications, handling complex state transitions and role-based access control.",
-        "Built and optimized RESTful APIs, implemented secure authentication with JWT, and enhanced application security through robust validation and error handling.",
-        "Worked extensively with MSSQL for writing stored procedures, joins, and transactions to support dynamic data-driven features.",
-        "Integrated ShadCN UI, Tailwind CSS, and Bootstrap for responsive, accessible, and high-performance user interfaces.",
-        "Used GitHub for version control and collaborated with cross-functional teams under Agile methodology to deliver scalable, production-ready solutions."
-      ]
-    }
-  ]
+      title: "Software Developer",
+      company: "Baxture Technologies Pvt Ltd",
+      location: "Wakad, Pune",
+      period: "February 2024 – Present",
+      responsibilities: [
+        "Developed and maintained 4+ production full-stack applications using Next.js, React.js, and .NET Core APIs, reducing front-end and back-end integration overhead by approx. 30%.",
+        "Collaborated directly with 5+ clients to gather requirements, define feature scope, and deliver technical solutions aligned with business goals, reducing feedback-revision cycles by 20%.",
+        "Designed and implemented workflow-based enterprise modules handling 10+ complex state transitions and role-based access control (RBAC) for 4+ distinct user roles.",
+        "Built and optimized 15+ RESTful APIs with JWT authentication and layered validation, eliminating unauthorized access incidents and improving API reliability.",
+        "Authored 20+ MSSQL stored procedures, optimized joins and transactions, improving dynamic data retrieval speed by approx. 35% across 3+ core modules.",
+        "Integrated ShadCN UI and Tailwind CSS component systems, cutting UI development time by 25% while maintaining responsive, accessible interfaces across all breakpoints.",
+        "Maintained 95%+ on-time sprint delivery across 6+ Agile cycles using Git/GitHub for version control and Jenkins for CI/CD pipeline management.",
+      ],
+    },
+  ];
   
 
   const sectionRef = useRef<HTMLDivElement | null>(null);
