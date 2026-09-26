@@ -50,7 +50,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="relative z-10 rounded-full max-w-[35%] mx-auto outline outline-[0.3rem] outline-offset-[0.1rem] outline-purple-400/30"
                 src="/profile.png"
-                alt="Your Profile"
+                alt="Shreyash Balapure - Full-Stack Software Developer & AI Automation Engineer"
               />
             </div>
           </motion.div>
@@ -63,7 +63,7 @@ export default function HeroSection() {
             className="w-full lg:w-1/2"
           >
             <div className="space-y-6 max-w-3xl text-center lg:text-left">
-              <motion.h2
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -71,7 +71,7 @@ export default function HeroSection() {
               >
                 HEY, I&apos;M&nbsp;
                 <span className="text-[#d946ef]">SHREYASH BALAPURE</span>
-              </motion.h2>
+              </motion.h1>
 
               <div className="text-xl font-medium text-gray-800 dark:text-gray-200">
                 <TypeAnimation
